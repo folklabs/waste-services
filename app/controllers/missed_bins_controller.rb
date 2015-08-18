@@ -9,7 +9,7 @@ class MissedBinsController < ApplicationController
     puts wizard_path(:select_bins)
     case step
     when :select_bins
-      conn = Faraday.new(:url => ENV[WASTE_API_URL]) do |faraday|
+      conn = Faraday.new(:url => ENV['WASTE_API_URL']) do |faraday|
         faraday.request :json
 
         faraday.response :json, :content_type => /json$/
