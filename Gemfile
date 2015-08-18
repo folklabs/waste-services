@@ -7,16 +7,26 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
 gem 'bootstrap-sass'
 gem 'figaro', '>= 1.0.0.rc1'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'simple_form'
+
+gem 'rest-client', '~> 1.8.0'
+gem 'wicked'
+gem 'faraday'
+gem 'faraday_middleware'
+gem 'hashie'
+
+
 group :development do
   gem 'better_errors'
   gem 'guard-bundler'
@@ -31,6 +41,7 @@ group :development do
   gem 'rb-inotify', :require=>false
   gem 'spring-commands-rspec'
 end
+
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
@@ -40,11 +51,13 @@ group :development, :test do
   gem 'rubocop'
   gem 'sqlite3'
 end
+
 group :production do
   gem 'pg'
   gem 'puma'
   gem 'rails_12factor'
 end
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner'

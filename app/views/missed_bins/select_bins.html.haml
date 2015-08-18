@@ -1,0 +1,40 @@
+
+.container
+  %h2 Your services
+
+  %p Please select the containers that have not been collected. Make sure to review any reported issues with the collection before submitting a report.
+
+  / # = form_tag(next_wizard_path, method: "get") do
+  .panel.panel-default
+    .panel-heading
+      %h2.panel-title= @service.name
+    .panel-body
+      .res-label Next collection
+      .collection-date= @service.next_collection
+      .res-label Last collection
+      .collection-date= @service.last_collection
+
+    %ul.list-group
+      - @service.container_types.each do |container|
+        %li.list-group-item
+          .checkbox.lg.pull-right
+            %label
+              = check_box_tag(:container)
+          %h4.container-name
+            = container.color
+            = container.shape
+          .material-stream
+            = container.material_stream.name
+
+          - if @service.events
+            %ul.list-group
+              - @service.events.each do |event|
+                - if event.container_color == container.color
+                  %li.list-group-item.list-group-item-danger
+                    %span.glyphicon.glyphicon-exclamation-sign
+                    .event-type= event.type
+                    %span Date:
+                    %span.event-date= event.date_created
+
+
+  = link_to 'Next', next_wizard_path, {"class" =>"btn btn-primary"}

@@ -1,0 +1,19 @@
+
+.container
+  %h2 Find your address
+
+  = label_tag(:address_search, "Enter a postcode:")
+  .input-group
+    = text_field_tag(:address_search, nil, class: "form-control")
+    %span.input-group-btn
+      = link_to 'Search', nil, {"class" =>"btn btn-primary"}
+
+  %p Choose your address:
+  .list-group
+    %button.list-group-item{"type"=>"button"} 20 Acacia Avenue, Anytown, AB1 2CD
+    %button.list-group-item{"type"=>"button"} 22 Acacia Avenue, Anytown, AB1 2CD
+    %button.list-group-item{"type"=>"button"} 24 Acacia Avenue, Anytown, AB1 2CD
+    %button.list-group-item{"type"=>"button"} 26 Acacia Avenue, Anytown, AB1 2CD
+
+
+  = link_to 'Next', next_wizard_path, {"class" =>"btn btn-primary"}
