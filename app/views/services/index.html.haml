@@ -1,0 +1,11 @@
+
+.container
+  %h1 Services
+
+  - @services.each do |service|
+    .panel.panel-info
+      .panel-heading
+        .panel-title= service.name
+      .panel-body
+
+    /= service.provider['name']

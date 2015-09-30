@@ -1,7 +1,26 @@
+- titles = ['Schools', 'Transport and streets', 'Council tax', 'Social care', 'Elections']
 
 .container
-  %h3 Waste Standards demos
+  - titles.each do |t|
+    .panel.panel-info.panel-services
+      .panel-heading
+        .panel-title= t
+      .panel-body
+        %a{:href => '/#'} Link 1
+        %br
+        %a{:href => '/#'} Link 2
+        %br
+        %a{:href => '/#'} Link 3
+        %br
 
-  %h4
-    %a{:href => '/missed-containers?id=find_address'} Report a missed bin
-    / %a{:href => '/containers/missed?id=select_bins'} Report a missed bin
+  .panel.panel-info.panel-services
+    .panel-heading
+      .panel-title Waste and recycling
+    .panel-body
+      %a{:href => '/services'} Collection services
+      %br
+      %a{:href => '/missed-containers?id=find_address'} Report a missed bin
+      %br
+      %a{:href => '/#'} A-Z 
+      %br
+

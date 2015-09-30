@@ -25,7 +25,8 @@ gem 'wicked'
 gem 'faraday'
 gem 'faraday_middleware'
 gem 'hashie'
-
+gem 'her'
+gem "breadcrumbs_on_rails"
 
 group :development do
   gem 'better_errors'

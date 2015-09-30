@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
-    %title= content_for?(:title) ? yield(:title) : 'Waste Ui'
+    %title= content_for?(:title) ? yield(:title) : 'Waste Services'
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Waste Ui'}"}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
@@ -10,6 +10,9 @@
   %body
     %header
       = render 'layouts/navigation'
+      
     %main{:role => "main"}
+      .container
+        = render 'layouts/breadcrumbs'
       = render 'layouts/messages'
       = yield

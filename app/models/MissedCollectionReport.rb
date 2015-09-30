@@ -1,0 +1,3 @@
+class MissedCollectionReport
+  
+end

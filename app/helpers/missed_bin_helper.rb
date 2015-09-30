@@ -1,0 +1,2 @@
+module MissedBinHelper
+end

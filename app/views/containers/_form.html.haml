@@ -1,0 +1,8 @@
+= simple_form_for(@container) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :color
+
+  .form-actions
+    = f.button :submit
