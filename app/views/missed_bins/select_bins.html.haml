@@ -1,6 +1,8 @@
 
 .container
-  %h2 Your services
+  %h2 Latest collections
+
+  %p Did we miss your bins? Check for issues we already know about or add a new issue.
 
   %p Please select the containers that have not been collected. Make sure to review any reported issues with the collection before submitting a report.
 
@@ -45,4 +47,4 @@
 
 
   = link_to 'Back', previous_wizard_path, {"class" =>"btn btn-default"}
-  = link_to 'Enter details', next_wizard_path, {"class" =>"btn btn-primary"}
+  = link_to 'Report missed collection', next_wizard_path, {"class" =>"btn btn-primary"}
