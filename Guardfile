@@ -103,6 +103,7 @@ guard :rspec, cmd: "bundle exec rspec" do
 end
 
 guard 'livereload' do
+  watch(%r{app/assets/stylesheets/.+\.(scss)$})
   watch(%r{app/views/.+\.(erb|haml|slim)$})
   watch(%r{app/helpers/.+\.rb})
   watch(%r{public/.+\.(css|js|html)})
