@@ -1,26 +1,29 @@
 - titles = ['Schools', 'Transport and streets', 'Council tax', 'Social care', 'Elections']
 
-.container
-  - titles.each do |t|
+.row
+  .columns.small-12
+    %h1 Home
+
+    - titles.each do |t|
+      .panel.panel-info.panel-services
+        .panel-heading
+          .panel-title= t
+        .panel-body
+          %a{:href => '/#'} Link 1
+          %br
+          %a{:href => '/#'} Link 2
+          %br
+          %a{:href => '/#'} Link 3
+          %br
+
     .panel.panel-info.panel-services
       .panel-heading
-        .panel-title= t
+        .panel-title Waste and recycling
       .panel-body
-        %a{:href => '/#'} Link 1
+        %a{:href => '/services'} Collection services
         %br
-        %a{:href => '/#'} Link 2
+        %a{:href => '/missed-containers?id=find_address'} Report a missed bin
         %br
-        %a{:href => '/#'} Link 3
+        %a{:href => '/#'} A-Z 
         %br
-
-  .panel.panel-info.panel-services
-    .panel-heading
-      .panel-title Waste and recycling
-    .panel-body
-      %a{:href => '/services'} Collection services
-      %br
-      %a{:href => '/missed-containers?id=find_address'} Report a missed bin
-      %br
-      %a{:href => '/#'} A-Z 
-      %br
 

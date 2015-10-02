@@ -14,7 +14,8 @@ group :development, :test do
   gem 'spring'
 end
 
-gem 'bootstrap-sass'
+# gem 'bootstrap-sass'
+gem 'foundation-rails'
 gem 'figaro', '>= 1.0.0.rc1'
 gem 'haml-rails'
 gem 'high_voltage'
