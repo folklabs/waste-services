@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   # resource 'missed_bin'
 
   root to: 'visitors#index'
+
+  get 'styleguide', to: 'visitors#styleguide'
 end
