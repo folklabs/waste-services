@@ -1,14 +1,100 @@
 
 .container
-  %h1 Styleguide
-  %h2 Latest collections
+  .row
+    .small-12.column
+      %h1 Latest collections
+      %p Did we miss your bins? Check for issues we already know about or add a new issue.
+      %p Please select the containers that have not been collected. Make sure to review any reported issues with the collection before submitting a report.
 
-  %p Did we miss your bins? Check for issues we already know about or add a new issue.
+      / Green wheelie bin
+      .panel.panel-info
+        .panel-heading
+          .row
+            .small-1.column.container-thumbnail
+              =image_tag("wrap_wheeliebin_green_rc019_60px.png")
+            .small-11.column
+              %h2.panel-title Green wheelie bin
+              %span.label.large.round.success Mixed recycling
+          .panel-body
+            .row
+              .small-12.column
+                .alert-box.alert
+                  .row
+                    .column.left ICON Not emptied: 30 Nov
+                    %form.right{:action => ""}
+                      %label.label.round.warning.select-report{:for => "no-click-me"}
+                        %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
+                        Appeal
+                  .row
+                    .column.left Road works blocked access to your property
+            .row
+              .small-12.column
+                Next Green Box collection: 07 December
 
-  %p Please select the containers that have not been collected. Make sure to review any reported issues with the collection before submitting a report.
-  .panel.panel-info
-    .panel-heading
-      %h2.panel-title Panel title: Testing testing 123
-    .panel-body
-      %h3.panel-info Panel testing
-      %button.btn.button-alert.small.radius Help
+      / Brown food caddy
+      .panel.panel-info
+        .panel-heading
+          .row
+            .small-1.column.container-thumbnail
+              =image_tag("wrap_kitchencaddy_brown_60px.png")
+            .small-11.column
+              %h2.panel-title Green wheelie bin
+              %span.label.large.round.success Food waste
+          .panel-body
+            .row
+              .small-12.column
+                .alert-box.info
+                  ICON Last emptied: 30 Nov
+                  %form.right{:action => ""}
+                    %label.label.round.warning.select-report{:for => "no-click-me"}
+                      %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
+                      Report
+            .row
+              .small-12.column
+                Next Brown Caddy collection: 07 December
+
+      / Side waste bag - Electronics
+      .panel.panel-info
+        .panel-heading
+          .row
+            .small-1.column.container-thumbnail
+              =image_tag("wrap_sack_clear_rc008_60px.png")
+            .small-11.column
+              %h2.panel-title Side waste bag - Electronics & Electrical
+              %span.label.large.round.success Electronics & Electrical
+          .panel-body
+            .row
+              .small-12.column
+                .alert-box.info
+                  ICON Last emptied: 30 Nov
+                  %form.right{:action => ""}
+                    %label.label.round.warning.select-report{:for => "no-click-me"}
+                      %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
+                      Report
+            .row
+              .small-12.column
+                Next Side waste bag (Electronics & Electrical) collection: 07 December
+
+      / Side waste bag - Mixed textiles & clothes
+      .panel.panel-info
+        .panel-heading
+          .row
+            .small-1.column.container-thumbnail
+              =image_tag("wrap_sack_clear_rc008_60px.png")
+            .small-11.column
+              %h2.panel-title Side waste bag
+              %span.label.large.round.success Mixed textiles & clothes
+          .panel-body
+            .row
+              .small-12.column
+                .alert-box.info
+                  ICON Last emptied: 30 Nov
+                  %form.right{:action => ""}
+                    %label.label.round.warning.select-report{:for => "no-click-me"}
+                      %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
+                      Report
+            .row
+              .small-12.column
+                Next Side waste bag (Mixed textiles & clothes) collection: 07 December
+
+      %button.right.btn-primary Enter details >
