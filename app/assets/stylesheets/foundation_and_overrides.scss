@@ -101,15 +101,15 @@ $font-weight-bold: 800 !default;
 // First set black and white variables
 
 $white       : #FFFFFF;
-$black       : #000000;
+$black       : #0b0c0c;
 
 // Next, we set default colors variables
 $primary-color: #005ea5;
-$secondary-color: #002833;
-$alert-color: #d9001e;
-$success-color: #00823b;
-$warning-color: #ff7d00;
-$info-color: #ffc300;
+$secondary-color: #6f777b;
+$alert-color: #df3034;
+$success-color: #006435;
+$warning-color: #f47738;
+$info-color: #2b8cc4;
 
 // Next, we build a primary range of variables
 // $primary-01: mix($primary-color, $white, 10);
@@ -294,7 +294,7 @@ $anchor-font-color-hover: mix($primary-color, $secondary-color, 50%);
 // We use these to style the <hr> element
 $hr-border-width: 1px;
 $hr-border-style: solid;
-$hr-border-color: $vapor;
+$hr-border-color: $base;
 $hr-margin: rem-calc(24);
 
 // We use these to style lists
@@ -410,7 +410,7 @@ $alert-radius: $global-radius;
 
 // We use this to control the maximum number of block grid elements per row
 // $block-grid-elements: 12;
-// $block-grid-default-spacing: rem-calc(20);
+$block-grid-default-spacing: rem-calc(24);
 
 // $align-block-grid-to-grid: false;
 // @if $align-block-grid-to-grid {$block-grid-default-spacing: $column-gutter;}
@@ -424,30 +424,30 @@ $alert-radius: $global-radius;
 // $include-html-nav-classes: $include-html-classes;
 
 // We use this to set the background color for the breadcrumb container.
-// $crumb-bg: scale-color($secondary-color, $lightness: 55%);
+$crumb-bg: transparentize($secondary-color, 0.75);
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: rem-calc(9 14 9);
 // $crumb-side-padding: rem-calc(12);
 
 // We use these to control border styles.
-// $crumb-function-factor: -10%;
-// $crumb-border-size: 1px;
-// $crumb-border-style: solid;
-// $crumb-border-color: scale-color($crumb-bg, $lightness: $crumb-function-factor);
-// $crumb-radius: $global-radius;
+$crumb-function-factor: -10%;
+$crumb-border-size: 0px;
+$crumb-border-style: none;
+$crumb-border-color: none;
+$crumb-radius: 0px;
 
 // We use these to set various text styles for breadcrumbs.
-// $crumb-font-size: rem-calc(11);
-// $crumb-font-color: $primary-color;
-// $crumb-font-color-current: $oil;
-// $crumb-font-color-unavailable: $aluminum;
-// $crumb-font-transform: uppercase;
-// $crumb-link-decor: underline;
+$crumb-font-size: $small-font-size;
+$crumb-font-color: $primary-color;
+$crumb-font-color-current: $oil;
+$crumb-font-color-unavailable: $aluminum;
+$crumb-font-transform: uppercase;
+$crumb-link-decor: underline;
 
 // We use these to control the slash between breadcrumbs
-// $crumb-slash-color: $base;
-// $crumb-slash: "/";
+$crumb-slash-color: $base;
+$crumb-slash: "/";
 
 // 05. Buttons
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -472,7 +472,7 @@ $alert-radius: $global-radius;
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
 // $button-font-lrg: rem-calc(20);
-// $button-font-weight: $font-weight-normal;
+$button-font-weight: $font-weight-bold;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
@@ -496,8 +496,8 @@ $alert-radius: $global-radius;
 // $info-button-border-color: $info-button-bg-hover;
 
 // We use this to set the default radius used throughout the core.
-// $button-radius: $global-radius;
-// $button-round: $global-rounded;
+$button-radius: $global-rounded;
+$button-round: $global-rounded;
 
 // We use this to set default opacity and cursor for disabled buttons.
 // $button-disabled-opacity: .7;

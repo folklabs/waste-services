@@ -3,16 +3,19 @@
   .row
     .small-12.column
       %h1 Latest collections
-      %p Did we miss your bins? Check for issues we already know about or add a new issue.
-      %p Please select the containers that have not been collected. Make sure to review any reported issues with the collection before submitting a report.
+      %p
+        To report missed bins for this week, select at least one then click the
+        %strong Report missed bin
+        button to enter your details
 
       / Green wheelie bin
       .panel.panel-info
         .panel-heading
           .row
-            .small-1.column.container-thumbnail
-              =image_tag("wrap_wheeliebin_green_rc019_60px.png")
-            .small-11.column
+            .small-2.large-1.column.container-thumbnail
+              .text-center
+                =image_tag("wrap_wheeliebin_green_rc019_60px.png")
+            .small-10.large-11.column
               %h2.panel-title Green wheelie bin
               %span.label.large.round.success Mixed recycling
           .panel-body
@@ -20,13 +23,19 @@
               .small-12.column
                 .alert-box.alert
                   .row
-                    .column.left ICON Not emptied: 30 Nov
-                    %form.right{:action => ""}
-                      %label.label.round.warning.select-report{:for => "no-click-me"}
-                        %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
-                        Appeal
+                    .small-2.column.icon.icon-alert
+                      =image_tag("waste-icon-alert.svg")
+                    .small-6.column
+                      Not emptied:
+                      %br/
+                      30 November
+                    .small-4.column
+                      %form.right{:action => ""}
+                        %label.round.select-report{:for => "no-click-me"}
+                          %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
+                          Appeal
                   .row
-                    .column.left Road works blocked access to your property
+                    .column.left Sorry we couldn't empty your bins – roadworks blocked our access.
             .row
               .small-12.column
                 Next Green Box collection: 07 December
@@ -35,66 +44,110 @@
       .panel.panel-info
         .panel-heading
           .row
-            .small-1.column.container-thumbnail
-              =image_tag("wrap_kitchencaddy_brown_60px.png")
-            .small-11.column
-              %h2.panel-title Green wheelie bin
+            .small-2.large-1.column.container-thumbnail
+              .text-center
+                =image_tag("wrap_kitchencaddy_brown_60px.png")
+            .small-10.large-11.column
+              %h2.panel-title Brown food caddy
               %span.label.large.round.success Food waste
           .panel-body
             .row
               .small-12.column
                 .alert-box.info
-                  ICON Last emptied: 30 Nov
-                  %form.right{:action => ""}
-                    %label.label.round.warning.select-report{:for => "no-click-me"}
-                      %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
-                      Report
+                  .row
+                    .small-2.column.icon.icon-success
+                      =image_tag("waste-icon-success.svg")
+                    .small-6.column
+                      Last emptied:
+                      %br/
+                      30 November
+                    .small-4.column
+                      %form.right{:action => ""}
+                        %label.label.round.select-report{:for => "no-click-me"}
+                          %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
+                          Report
             .row
               .small-12.column
                 Next Brown Caddy collection: 07 December
 
-      / Side waste bag - Electronics
-      .panel.panel-info
-        .panel-heading
-          .row
-            .small-1.column.container-thumbnail
-              =image_tag("wrap_sack_clear_rc008_60px.png")
-            .small-11.column
-              %h2.panel-title Side waste bag - Electronics & Electrical
-              %span.label.large.round.success Electronics & Electrical
-          .panel-body
-            .row
-              .small-12.column
-                .alert-box.info
-                  ICON Last emptied: 30 Nov
-                  %form.right{:action => ""}
-                    %label.label.round.warning.select-report{:for => "no-click-me"}
-                      %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
-                      Report
-            .row
-              .small-12.column
-                Next Side waste bag (Electronics & Electrical) collection: 07 December
+      %button.right.btn-primary.round Report missed bin >
 
-      / Side waste bag - Mixed textiles & clothes
+  %hr/
+  .row
+    .small-12.column
+      %h1 Upcoming collections
+      %p
+        To report missed bins for this week, select at least one then click the
+        %strong Report missed bin
+        button to enter your details
       .panel.panel-info
+        %h2 Normal service
         .panel-heading
-          .row
-            .small-1.column.container-thumbnail
-              =image_tag("wrap_sack_clear_rc008_60px.png")
-            .small-11.column
-              %h2.panel-title Side waste bag
-              %span.label.large.round.success Mixed textiles & clothes
-          .panel-body
-            .row
-              .small-12.column
-                .alert-box.info
-                  ICON Last emptied: 30 Nov
-                  %form.right{:action => ""}
-                    %label.label.round.warning.select-report{:for => "no-click-me"}
-                      %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
-                      Report
-            .row
-              .small-12.column
-                Next Side waste bag (Mixed textiles & clothes) collection: 07 December
+          Next collection in 7 days (Wednesday 27 December)
 
-      %button.right.btn-primary Enter details >
+      .panel.panel-info
+        %h2 Bank holiday service
+        .panel-heading
+          Next collection in 14 days (Wednesday 3 January)
+        .panel-body
+          %dl.accordion{"data-accordion" => ""}
+            %dd.accordion-navigation
+              %a{:href => "#panel1b"}
+                Green wheelie bin
+                %br/
+                %span.label.large.round.success Mixed recyclables
+              #panel1b.content.active
+
+          %dl.accordion{"data-accordion" => ""}
+            %dd.accordion-navigation
+              %a{:href => "#panel2b"}
+                Side waste bags
+                %br/
+                %span.label.large.round.success Electronics & Electrical
+              #panel2b.content.active
+                %p Side waste bags or sacks are ordinary bags or sacks which you can fill with electronic or electrical waste. They can then be left out next to your normal bins.
+                %p We collect side waste bags and sacks every two weeks except on bank holidays and other public holidays.
+                %ul
+                  %li X Telecoms & computers - Fax & CPU
+                  %li X Batteries
+                  %li X Small appliances - Radios
+                  %li X Small appliances - Hair dryers
+                  %li X Small appliances - Mixed
+                  %li X Large appliances - Washing machines
+                  %li X Flourescent tubes
+                  %li X Low energy bulbs
+                  %li X Mixed light bulbs
+                  %li X Mobile phones
+                  %li X Printer cartridges
+                  %li X TV & monitors
+                  %li X Large appliances - Mixed
+                  %li X Small appliances - Irons
+                  %li X Fridges & Freezers
+                  %li X Telecoms & computers - Phone & Mouse
+                .panel
+          %dl.accordion{"data-accordion" => ""}
+            %dd.accordion-navigation
+              %a{:href => "#panel3b"}
+                Black bin
+                %br/
+                %span.label.large.round.success Household waste
+              #panel3b.content.active
+                .panel
+
+
+      .panel.panel-alert
+        .panel-heading
+          Keep up to date
+        .panel-body
+          Enter your email address to be sent alerts whenever your collection is rescheduled
+          %form{:action => "", :method => "post"}
+            %label{:for => "POST-name"} Email:
+            %input#POST-name{:name => "Email", :type => "email"}/
+            %input{:type => "submit", :value => "Submit"}/
+
+
+
+
+
+
+

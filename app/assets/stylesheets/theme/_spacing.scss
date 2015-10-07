@@ -1,0 +1,16 @@
+@import "foundation_and_overrides";
+
+// We define a spacing variable for the minimum spacing possible
+// Usually we want this to be zero
+$spacer-0: 0px;
+
+// Next, we set up a base unit for our scaling series
+// Usually this is three
+$spacer-6: rem-calc(3);
+
+// The base unit is then multiplied up to create a scale of 6 spacers
+$spacer-5: ($spacer-6 * 2); // 6
+$spacer-4: ($spacer-5 * 2); // 12
+$spacer-3: ($spacer-4 * 2); // 24
+$spacer-2: ($spacer-3 * 2); // 48
+$spacer-1: ($spacer-2 * 2); // 96

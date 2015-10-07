@@ -1,4 +1,10 @@
+@import "foundation_and_overrides";
+
 .select-report
   input[type="checkbox"] {
     margin: 0;
   }
+
+input[type="submit"] {
+  @extend button;
+}
