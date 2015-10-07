@@ -3,3 +3,11 @@
   background-color: $white;
   padding: 12px;
 }
+
+// Basic collection and container grouping panel
+.panel-outer {
+  @include panel();
+  background-color: transparent;
+  border: none;
+  border-top: solid 8px $primary-color;
+}

@@ -1,16 +1,16 @@
 
 .container
   .row
-    .small-8.column
+    .small-12.medium-8.large-8.column
       %h1 Latest collections
-      %p
+      .subheader
         To report missed bins for this week, select at least one then enter your details and click the
         %strong Report missed bin
         button to send your report to us
   .row
     .small-12.medium-7.large-8.column
       / Green wheelie bin
-      .panel.panel-info
+      .panel.panel-outer
         .panel-heading
           .row
             .small-2.large-1.column.container-thumbnail
@@ -24,28 +24,32 @@
             .small-12.column
               .alert-box.alert
                 .row
-                  .small-2.medium-1.column.icon.icon-alert
+                  .small-2.medium-2.large-1.column.icon.icon-alert
                     =image_tag("waste-icon-alert.svg")
-                  .small-6.medium-7.column
-                    .inline-block Not emptied:
+                  .small-6.medium-8.large-7.column
+                    .inline-block Not collected:
                     .inline-block 30 November
-                  .small-4.column
+                  .small-4.medium-4.large-3.column
                     %form.right{:action => ""}
                       %label.checkbox-wrapper.round.select-report{:for => "no-click-me"}
-                        %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
+                        %input#no-click-me{:name => "gwb-appeal", :type => "checkbox"}/
                         Appeal
-                .row
-                  .small-12.column.left Sorry we didn't empty your bins – they were too full so the lid wouldn't close properly.
-                  .small-12.column.end.report-image
-                    =image_tag("bins_too_full.jpg")
-                  .small-12.column
-                    %a{:href => "#{}"} Find out how to avoid overfilling your bins
+              .row
+                .small-12.column Sorry we didn't empty your bins – they were too full, so the lid wouldn't close properly.
+                .small-12.column.end.report-image
+                  =image_tag("bins_too_full.jpg")
+                .small-12.column
+                  %a{:href => "#{}"} Find out how to avoid overfilling your bins
           .row
             .small-12.column
-              Next Green Box collection: 07 December
+              %strong
+                .inline-block
+                  Your next Green Box collection:
+                .inline-block
+                  %a{:href => "#{}"} 07 December
 
       / Brown food caddy
-      .panel.panel-info
+      .panel.panel-outer
         .panel-heading
           .row
             .small-2.large-1.column.container-thumbnail
@@ -62,16 +66,20 @@
                   .small-2.medium-1.column.icon.icon-success
                     =image_tag("waste-icon-success.svg")
                   .small-6.medium-7.column
-                    .inline-block Last emptied:
+                    .inline-block Last collected:
                     .inline-block 30 November
                   .small-4.column
                     %form.right{:action => ""}
                       %label.checkbox-wrapper.round.select-report{:for => "no-click-me"}
-                        %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
+                        %input#no-click-me{:name => "bfc-report", :type => "checkbox"}/
                         Report
           .row
             .small-12.column
-              Next Brown Caddy collection: 07 December
+              %strong
+                .inline-block
+                  Your next Brown Caddy collection:
+                .inline-block
+                  %a{:href => "#{}"}07 December
     .small-12.medium-5.large-4.column
       .panel.panel-alert
         .panel-heading
@@ -84,23 +92,24 @@
             %label{:for => "POST-name"} Email:
             %input#POST-name{:name => "Email", :type => "email", :placeholder => "Your email address"}/
             %label{:for => "POST-name"} Telephone:
-            %input#POST-name{:name => "Telephone", :type => "email", :placeholder => "Your telephone number"}/
+            %input#POST-name{:name => "Telephone", :type => "text", :placeholder => "Your telephone number"}/
             %input.button.primary.round.small{:type => "submit", :value => "Report missed bin >"}/
 
   %hr/
   .row
-    .small-8.column
+    .small-12.medium-8.large-8.column
       %h1 Upcoming collections
-      %p
-        Normal services at 12 Folkton Road, F01 1LK
+      .subheader Normal services at
+      %strong 12 Folkton Road, F01 1LK
   .row
     .small-12.medium-7.large-8.column
-      .panel.panel-info
+      .panel.panel-outer
         %h2 General recycling & Household waste collection
         .panel-heading
           .row
-            .small-12.large-6.column Next collection in 7 days
-            .small-12.large-6.column (Wednesday 27 December)
+            .small-12.column
+              .inline-block Next collection in 7 days
+              .inline-block (Wednesday 27 December)
         .panel-body
           %dl.accordion{"data-accordion" => ""}
             %dd.accordion-navigation
@@ -198,7 +207,7 @@
                   %li X Telecoms & computers - Phone & Mouse
                 %p We collect side waste bags and sacks every two weeks except on bank holidays and other public holidays.
 
-      .panel.panel-info
+      .panel.panel-outer
         %h2 Food & Textiles collection
         .panel-heading
           Next collection in 14 days (Wednesday 3 January)
