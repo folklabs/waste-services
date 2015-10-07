@@ -23,3 +23,8 @@ h5 {
 h6 {
   letter-spacing: -0.01em;
 }
+
+// Wrap short snippets on narrow views
+.inline-block {
+  display: inline-block;
+}

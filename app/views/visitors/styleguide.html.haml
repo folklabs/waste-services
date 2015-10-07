@@ -8,7 +8,7 @@
         %strong Report missed bin
         button to send your report to us
   .row
-    .small-12.large-8.column
+    .small-12.medium-7.large-8.column
       / Green wheelie bin
       .panel.panel-info
         .panel-heading
@@ -24,21 +24,22 @@
             .small-12.column
               .alert-box.alert
                 .row
-                  .small-1.column.icon.icon-alert
+                  .small-2.medium-1.column.icon.icon-alert
                     =image_tag("waste-icon-alert.svg")
-                  .small-8.column
-                    .row
-                      .small-12.medium-4.large-4.column Not emptied:
-                      .small-12.medium-4.large-4.column 30 November
-                  .small-3.column
+                  .small-6.medium-7.column
+                    .inline-block Not emptied:
+                    .inline-block 30 November
+                  .small-4.column
                     %form.right{:action => ""}
                       %label.checkbox-wrapper.round.select-report{:for => "no-click-me"}
                         %input#no-click-me{:name => "no-click-me", :type => "checkbox"}/
                         Appeal
                 .row
-                  .column.left Sorry we didn't empty your bins – they were too full so the lid wouldn't close properly.
+                  .small-12.column.left Sorry we didn't empty your bins – they were too full so the lid wouldn't close properly.
                   .small-12.column.end.report-image
                     =image_tag("bins_too_full.jpg")
+                  .small-12.column
+                    %a{:href => "#{}"} Find out how to avoid overfilling your bins
           .row
             .small-12.column
               Next Green Box collection: 07 December
@@ -58,12 +59,11 @@
             .small-12.column
               .alert-box.info
                 .row
-                  .small-2.column.icon.icon-success
+                  .small-2.medium-1.column.icon.icon-success
                     =image_tag("waste-icon-success.svg")
-                  .small-6.column
-                    Last emptied:
-                    %br/
-                    30 November
+                  .small-6.medium-7.column
+                    .inline-block Last emptied:
+                    .inline-block 30 November
                   .small-4.column
                     %form.right{:action => ""}
                       %label.checkbox-wrapper.round.select-report{:for => "no-click-me"}
@@ -72,7 +72,7 @@
           .row
             .small-12.column
               Next Brown Caddy collection: 07 December
-    .small-12.large-4.column
+    .small-12.medium-5.large-4.column
       .panel.panel-alert
         .panel-heading
           %h3 Enter your details
@@ -94,7 +94,7 @@
       %p
         Normal services at 12 Folkton Road, F01 1LK
   .row
-    .small-12.large-8.column
+    .small-12.medium-7.large-8.column
       .panel.panel-info
         %h2 General recycling & Household waste collection
         .panel-heading
@@ -268,7 +268,7 @@
                   %li X Fridges & Freezers
                   %li X Telecoms & computers - Phone & Mouse
                 %p We collect side waste bags and sacks every two weeks except on bank holidays and other public holidays.
-    .small-12.large-4.column
+    .small-12.medium-5.large-4.column
       .panel.panel-alert
         .panel-heading
           %h3 Keep up to date
