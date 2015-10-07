@@ -1,0 +1,69 @@
+
+// Label mixin for Paper and cardboard
+.label-stream-paper {
+  @include label();
+  background-color: $colour-paper;
+}
+
+// Label mixin for Food waste
+.label-stream-food {
+  @include label();
+  background-color: $colour-food;
+}
+
+// Label mixin for Paper and cardboard
+.label-stream-glass {
+  @include label();
+  background-color: $colour-glass;
+}
+
+// Label mixin for Paper and cardboard
+.label-stream-textile {
+  @include label();
+  background-color: $colour-textile;
+}
+
+.label-stream-mixed {
+  @include label();
+  background-color: $colour-mixed;
+}
+
+.label-stream-electric {
+  @include label();
+  background-color: $colour-electric;
+}
+
+.label-stream-household {
+  @include label(
+    // This options sets label padding
+    $padding: $label-padding,
+    // This option sets label text-size
+    $text-size: rem-calc(14),
+    // This option sets label background-color
+    $bg: $colour-household,
+    // This option sets the radius of the label
+    $radius: $global-radius
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

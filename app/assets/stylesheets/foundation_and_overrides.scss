@@ -828,8 +828,8 @@ $button-round: $global-rounded;
 // $include-html-label-classes: $include-html-classes;
 
 // We use these to style the labels
-// $label-padding: rem-calc(4 8 4);
-// $label-radius: $global-radius;
+$label-padding: rem-calc(4 8 4);
+$label-radius: $global-radius;
 
 // We use these to style the label text
 $label-font-sizing: rem-calc(14);
@@ -1000,28 +1000,28 @@ $label-font-family: $body-font-family;
 // 21. Panels
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-panel-classes: $include-html-classes;
+$include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-// $panel-bg: scale-color($white, $lightness: -5%);
-// $panel-border-style: solid;
-// $panel-border-size: 1px;
-// $callout-panel-bg: scale-color($primary-color, $lightness: 94%);
+$panel-bg:  mix($secondary-color, $white, 10%);
+$panel-border-style: solid;
+$panel-border-size: 1px;
+$callout-panel-bg: red;
 
 // We use this % to control how much we darken things on hover
-// $panel-border-color: scale-color($panel-bg, $lightness: -11%);
+$panel-border-color: mix($secondary-color, $white, 20%);
 
 // We use these to set default inner padding and bottom margin
-// $panel-margin-bottom: rem-calc(20);
-// $panel-padding: rem-calc(20);
+$panel-margin-bottom: rem-calc(24);
+$panel-padding: rem-calc(12);
 
 // We use these to set default font colors
-// $panel-font-color: $oil;
-// $panel-font-color-alt: $white;
+$panel-font-color: $oil;
+$panel-font-color-alt: $white;
 
 // $panel-header-adjust: true;
-// $callout-panel-link-color: $primary-color;
-// $callout-panel-link-color-hover: scale-color($callout-panel-link-color, $lightness: -14%);
+$callout-panel-link-color: $primary-color;
+$callout-panel-link-color-hover: scale-color($callout-panel-link-color, $lightness: -14%);
 
 // 22. Pricing Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1310,19 +1310,19 @@ $label-font-family: $body-font-family;
 
 // These control the background color for the table and even rows
 // $table-bg: $white;
-// $table-even-row-bg: $snow;
+$table-even-row-bg: $snow;
 
 // These control the table cell border style
 // $table-border-style: solid;
-// $table-border-size: 1px;
-// $table-border-color: $gainsboro;
+$table-border-size: 0px;
+$table-border-color: none;
 
 // These control the table head styles
-// $table-head-bg: $white-smoke;
-// $table-head-font-size: rem-calc(14);
-// $table-head-font-color: $jet;
-// $table-head-font-weight: $font-weight-bold;
-// $table-head-padding: rem-calc(8 10 10);
+$table-head-bg: $white;
+$table-head-font-size: rem-calc(16);
+$table-head-font-color: $header-font-color;
+$table-head-font-weight: $font-weight-bold;
+$table-head-padding: rem-calc(24 8 8 8);
 
 // These control the table foot styles
 // $table-foot-bg: $table-head-bg;
@@ -1335,18 +1335,18 @@ $label-font-family: $body-font-family;
 // table-caption-bg: transparent;
 // $table-caption-font-color: $table-head-font-color;
 // $table-caption-font-size: rem-calc(16);
-// $table-caption-font-weight: bold;
+$table-caption-font-weight: $font-weight-normal;
 
 // These control the row padding and font styles
-// $table-row-padding: rem-calc(9 10);
-// $table-row-font-size: rem-calc(14);
-// $table-row-font-color: $jet;
-// $table-line-height: rem-calc(18);
+$table-row-padding: rem-calc(8 16);
+$table-row-font-size: rem-calc(16);
+$table-row-font-color: $body-font-color;
+$table-line-height: rem-calc(24);
 
 // These are for controlling the layout, display and margin of tables
 // $table-layout: auto;
 // $table-display: table-cell;
-// $table-margin-bottom: rem-calc(20);
+$table-margin-bottom: rem-calc(24);
 
 
 // 31. Tabs
