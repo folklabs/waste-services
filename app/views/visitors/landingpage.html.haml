@@ -1,0 +1,112 @@
+.container
+  .row
+    .small-12.medium-8.large-8.column
+      %h1 Rubbish and recycling
+  .row
+    .small-12.medium-2.column
+      .ul.side-nav
+        %li
+          %a{:href => "#{}"} Home
+        %li
+          %a{:href => "#{}"} Benefits
+        %li
+          %a{:href => "#{}"} Business
+        %li
+          %a{:href => "#{}"} Community & living
+        %li
+          %a{:href => "#{}"} Council & democracy
+        %li
+          %a{:href => "#{}"} Council tax
+        %li
+          %a{:href => "#{}"} Education & learning
+        %li.active
+          %a Environment & planning
+        %li
+          %a{:href => "#{}"} Health & social care
+        %li
+          %a{:href => "#{}"} Housing
+        %li
+          %a{:href => "#{}"} Jobs & careers
+        %li
+          %a{:href => "#{}"} Leisure & culture
+        %li
+          %a{:href => "#{}"} Transport & streets
+    .small-12.medium-10.column
+      .panel.panel-postcode
+        %h3 Tell us where you live
+        %p Enter your postcode then choose your property from the dropdown list
+        %form
+          .large-12.columns
+            .row.collapse
+              .small-10.columns
+                %input{:placeholder => "Your post code", :type => "text"}/
+              .small-2.columns
+                %a.button.postfix{:href => "#"} Go
+          %input#no-click-me{:name => "address-cookie", :type => "checkbox"}/
+          %label{:for => "no-click-me"}
+            Save this in a cookie as My address
+            %a{:href => "#{}"} Learn more about cookies
+      %ul.small-block-grid-3{"data-equalizer" => ""}
+        %li
+          %a{:href => "#{}"}
+            .panel{"data-equalizer-watch" => ""}
+              %strong Collection times
+              .small Use our locator to find your next collection day
+        %li
+          %a{:href => "#{}"}
+            .panel{"data-equalizer-watch" => ""}
+              %strong Missed collections
+              .small Report a missed collection and discover reasons why your bins may not have been collected this week
+        %li
+          %a{:href => "#{}"}
+            .panel{"data-equalizer-watch" => ""}
+              %strong Reducing waste
+              .small We're ranked 13 in the country for recycling. Learn how we can become number one!
+
+      %ul.small-block-grid-4
+        %li
+          %a{:href => "#{}"}
+            %strong Your responsibilities
+          %p Learn more about where to leave your bins, when to bring them in, how to fill them and how to avoid contamination and missed collections.
+        %li
+          %a{:href => "#{}"}
+            %strong Download or print a calendar
+          %p Pin our collection schedule to your fridge door to help you to always know when to leave your bins out for collection
+        %li
+          %a{:href => "#{}"}
+            %strong Forgotten to leave your bins out?
+          %p If you've accidentally missed a collection, here's what you can do.
+        %li
+          %a{:href => "#{}"}
+            %strong Donating clothes and textiles
+          %p We do not take textiles in our weekly collections but here are some locations where you can drop off clothing and textiles.
+        %li
+          %a{:href => "#{}"}
+            %strong Special collections for large items
+          %p If you have a bulky item or white goods which you no longer need, arrange for our Bulky Collections team to come and pick them up.
+        %li
+          %a{:href => "#{}"}
+            %strong Commercial waste
+          %p Read more about Commercial Waste an recycling for businesses.
+        %li
+          %a{:href => "#{}"}
+            %strong Report fly tipping and graffiti
+          %p If you have spotted any on buildings or property in the area.
+        %li
+          %a{:href => "#{}"}
+            %strong Assisted collections
+          %p If you are sick, infirm or a carer for someone who is unable to take their bins out each week, apply for an Assisted Collection here
+
+    .small-12.medium-10.column
+      .panel.panel-outer
+        %h2 Contact your waste team
+        %p
+          %strong Recycling manager
+          %br/
+          Central Depot, Mytown, Mycounty, AB1 2CD
+          %br/
+          Tel: 01234 567 890
+          %br/
+          Email: wasteservices@mycouncil.gov.uk
+
+

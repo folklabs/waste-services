@@ -2,7 +2,7 @@
 .container
   .row
     .small-12.medium-8.large-8.column
-      %h1 Latest collections
+      %h1 Report a missed collection
       .subheader
         To report missed bins for this week, select at least one then enter your details and click the
         %strong Report missed bin
@@ -83,6 +83,8 @@
     .small-12.medium-5.large-4.column
       .panel.panel-alert
         .panel-heading
+          %h3 Call us 0800 123 456
+          %h3 Email us at bins@luton.gov.uk
           %h3 Enter your details
         .panel-body
           Please provide your contact details so that we can get in touch with you to resolve this issue
@@ -99,8 +101,10 @@
   .row
     .small-12.medium-8.large-8.column
       %h1 Upcoming collections
-      .subheader Normal services at
-      %strong 12 Folkton Road, F01 1LK
+      .subheader
+        Normal services at
+        %strong
+          12 Folkton Road, F01 1LK
   .row
     .small-12.medium-7.large-8.column
       .panel.panel-outer
@@ -109,7 +113,7 @@
           .row
             .small-12.column
               .inline-block Next collection in 7 days
-              .inline-block (Wednesday 27 December)
+              .inline-block (Monday 28 December)
         .panel-body
           %dl.accordion{"data-accordion" => ""}
             %dd.accordion-navigation
@@ -210,7 +214,10 @@
       .panel.panel-outer
         %h2 Food & Textiles collection
         .panel-heading
-          Next collection in 14 days (Wednesday 3 January)
+          .row
+            .small-12.column
+              .inline-block Next collection in 14 days
+              .inline-block (Monday 4 January)
         .panel-body
           %dl.accordion{"data-accordion" => ""}
             %dd.accordion-navigation
@@ -290,8 +297,165 @@
 
   %hr/
   .row
-    .small-12.column
-      Next guide
+    .small-12.medium-8.large-8.column
+      %h1 Rubbish and recycling
+      .subheader
+        Normal services at
+        %strong
+          12 Folkton Road, F01 1LK
+  .row
+    .small-12.medium-2.column
+      .ul.side-nav
+        %li
+          %a{:href => "#{}"} Home
+        %li
+          %a{:href => "#{}"} Benefits
+        %li
+          %a{:href => "#{}"} Business
+        %li
+          %a{:href => "#{}"} Community & living
+        %li
+          %a{:href => "#{}"} Council & democracy
+        %li
+          %a{:href => "#{}"} Council tax
+        %li
+          %a{:href => "#{}"} Education & learning
+        %li.active
+          %a Environment & planning
+        %li
+          %a{:href => "#{}"} Health & social care
+        %li
+          %a{:href => "#{}"} Housing
+        %li
+          %a{:href => "#{}"} Jobs & careers
+        %li
+          %a{:href => "#{}"} Leisure & culture
+        %li
+          %a{:href => "#{}"} Transport & streets
+    .small-12.medium-10.column
+      .panel.panel-postcode
+        %h3 Tell us where you live
+        %p Enter your postcode then choose your property from the dropdown list
+        %form
+          .large-12.columns
+            .row.collapse
+              .small-10.columns
+                %input{:placeholder => "Your post code", :type => "text"}/
+              .small-2.columns
+                %a.button.postfix{:href => "#"} Go
+          %input#no-click-me{:name => "address-cookie", :type => "checkbox"}/
+          %label{:for => "no-click-me"}
+            Save this in a cookie as My address
+            %a{:href => "#{}"} Learn more about cookies
+      %ul.small-block-grid-2
+        %li
+          .panel
+            %a{:href => "#{}"}
+              %strong Your responsibilities
+            .small Read more about
+        %li
+          .panel
+            %a{:href => "#{}"}
+              %strong Bin collections
+            .small Use our locator to find your next collection day
+
+      %ul.small-block-grid-3
+        %li
+          %a{:href => "#{}"}
+            %strong Your responsibilities
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong Too much rubbish?
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong Bin collections
+          .small Where to leave your bins
+        %li
+          %a{:href => "#{}"}
+            %strong What time to leave your bins out
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong Download or print a calendar
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong Forgotten to leave your bins out?
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong Donating clothes and textiles
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong Special collections for large items
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong Commercial waste
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong Report fly tipping or dumping
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong Report graffiti
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong More about rubbish
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong Assisted collections
+          .small Read more about
+        %li
+          %a{:href => "#{}"}
+            %strong Business waste collections
+          .small Read more about
+    .small-12.medium-7.large-8.column
+      .panel.panel-outer
+        %h2 Contact your waste team
+        %p
+          %strong Recycling manager
+          %br/
+          Central Depot, Mytown, Mycounty, AB1 2CD
+          %br/
+          Tel: 01234 567 890
+          %br/
+          Email: wasteservices@mycouncil.gov.uk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

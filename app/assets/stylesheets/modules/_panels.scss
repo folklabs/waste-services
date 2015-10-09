@@ -11,3 +11,14 @@
   border: none;
   border-top: solid 8px $primary-color;
 }
+
+.panel-postcode {
+   @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg:$info-color,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:$spacer-3,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+}
